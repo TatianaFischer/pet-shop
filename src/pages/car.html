@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho - PetShop</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <!-- Include o Header -->
+    <header class="bg-primary text-white text-center py-3">
+      <h1>PetShop</h1>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+          <a class="navbar-brand" href="../pages/products.html">PetShop</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/products.html">Produtos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/services.html">Serviços</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/register.html">Cadastro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/apointment.html">Agendamento</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/car.html">Carrinho</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="container mt-4">
+      <h2>Carrinho de Compras</h2>
+
+      <div id="listaProdutos" class="mt-4">
+        <!-- Aqui serão listados os produtos adicionados ao carrinho -->
+        <!-- Exemplo de um produto -->
+        <div class="card mb-3">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="../../public/img/produto1.jpg" class="card-img" alt="Produto 1">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Nome do Produto 1</h5>
+                <p class="card-text">Descrição detalhada do Produto 1.</p>
+                <p class="card-text"><strong>Valor:</strong> R$ 50,00</p>
+                <button class="btn btn-danger btn-sm" onclick="removerProduto(1)">Remover</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do exemplo -->
+
+        <!-- Aqui você pode repetir o bloco acima para cada produto adicionado ao carrinho -->
+      </div>
+
+      <!-- Total do Carrinho -->
+      <div class="mt-4">
+        <h4>Total: R$ <span id="totalCarrinho">0,00</span></h4>
+      </div>
+
+      <!-- Finalização da Compra -->
+      <div class="mt-4">
+        <button class="btn btn-primary">Finalizar Compra</button>
+      </div>
+    </main>
+
+    <!-- Include o Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+      <p>&copy; 2023 PetShop. Todos os direitos reservados.</p>
+      <p>Contato: email@petshop.com</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- Script personalizado para manipulação do carrinho -->
+    <script>
+      // Exemplo de função para remover produto do carrinho
+      function removerProduto(idProduto) {
+        // Aqui você implementa a lógica para remover o produto do carrinho
+        // Pode ser uma chamada AJAX para atualizar no servidor ou manipulação local
+        alert(`Produto ${idProduto} removido do carrinho.`);
+      }
+    </script>
+  </body>
+
+</html>

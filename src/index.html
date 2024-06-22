@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="bg-primary text-white text-center py-3">
+      <h1>PetShop</h1>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+          <a class="navbar-brand" href="./pages/products.html">PetShop</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/products.html">Produtos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/services.html">Serviços</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/register.html">Cadastro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/apoiment.html">Agendamento</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="container mt-4">
+      <h2>Bem-vindo ao PetShop</h2>
+      <p>Seu lugar de confiança para cuidar dos seus pets!</p>
+      <!-- Carousel -->
+      <main class="container mt-4">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner" style="height: 450px; margin: auto;">
+
+            <div class="carousel-item active">
+              <img src="../../public/img/produto1.jpg" class="d-block w-100" alt="Produto 1">
+            </div>
+            <div class=" carousel-item">
+              <img src="../../public/img/produto3.jpg" class="d-block w-100" alt="Produto 2">
+            </div>
+            <div class="carousel-item">
+              <img src="../../public/img/produto4.jpg" class="d-block w-100" alt="Produto 3">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" style="background-color: black">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next" style="background-color: black;">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+          </a>
+        </div>
+      </main>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+      <p>&copy; 2023 PetShop. Todos os direitos reservados.</p>
+      <p>Contato: email@petshop.com</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+
+</html>

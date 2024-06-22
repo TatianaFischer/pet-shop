@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - PetShop</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <!-- Include o Header -->
+    <header class="bg-primary text-white text-center py-3">
+      <h1>PetShop</h1>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+          <a class="navbar-brand" href="../pages/products.html">PetShop</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/products.html">Produtos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/services.html">Serviços</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/register.html">Cadastro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/apointment.html">Agendamento</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/car.html">Carrinho</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="container mt-4">
+      <h2>Cadastro de Cliente e Pet</h2>
+
+      <form id="formCadastro">
+        <!-- Dados do Cliente -->
+        <fieldset>
+          <legend>Dados do Cliente</legend>
+          <div class="form-group">
+            <label for="inputNomeCliente">Nome:</label>
+            <input type="text" class="form-control" id="inputNomeCliente" required>
+          </div>
+          <div class="form-group">
+            <label for="inputEndereco">Endereço:</label>
+            <input type="text" class="form-control" id="inputEndereco" required>
+          </div>
+          <div class="form-group">
+            <label for="inputTelefone">Telefone:</label>
+            <input type="tel" class="form-control" id="inputTelefone" required>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail">E-mail:</label>
+            <input type="email" class="form-control" id="inputEmail" required>
+          </div>
+        </fieldset>
+
+        <!-- Dados do Pet -->
+        <fieldset class="mt-4">
+          <legend>Dados do Pet</legend>
+          <div class="form-group">
+            <label for="inputNomePet">Nome:</label>
+            <input type="text" class="form-control" id="inputNomePet" required>
+          </div>
+          <div class="form-group">
+            <label for="selectTipoPet">Tipo:</label>
+            <select class="form-control" id="selectTipoPet" required>
+              <option value="">Selecione...</option>
+              <option value="cachorro">Cachorro</option>
+              <option value="gato">Gato</option>
+              <option value="outro">Outro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="inputRaca">Raça:</label>
+            <input type="text" class="form-control" id="inputRaca">
+          </div>
+          <div class="form-group">
+            <label for="inputTemperamento">Temperamento:</label>
+            <input type="text" class="form-control" id="inputTemperamento">
+          </div>
+        </fieldset>
+
+        <button type="submit" class="btn btn-primary mt-4">Cadastrar</button>
+      </form>
+    </main>
+
+    <!-- Include o Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+      <p>&copy; 2023 PetShop. Todos os direitos reservados.</p>
+      <p>Contato: email@petshop.com</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+
+</html>
