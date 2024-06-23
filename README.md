@@ -55,6 +55,23 @@ O rodapé contém informações legais e de contato:
 - **Contato**: Informações de contato para suporte e dúvidas.
 - **Links de Navegação**: Links rápidos para as principais páginas do site.
 
+
+## Como iniciar
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/meu-projeto-petshop.git
+   ```
+2. Abra a pasta do projeto no Visual Studio Code:
+   ```bash
+   cd meu-projeto-petshop
+   code .
+   ```
+3. Abra o arquivo `index.html` na pasta `src` e clique com o botão direito para selecionar `Open with Live Server`.
+
+## Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
 ---
 
 Esperamos que esta descrição ajude você a navegar e utilizar todas as funcionalidades do site da PetShop de forma eficiente. Se você tiver qualquer dúvida ou precisar de assistência, entre em contato conosco através do e-mail fornecido no rodapé.
